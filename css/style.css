@@ -31,9 +31,12 @@ padding:0;
 	width: 100%;
 background:#ced7df;
 background: url(../images/qianduan.jpg);
--webkit-background-size: cover!important;
-background-size: cover!important;
+-webkit-background-size: cover !important;
+background-size: cover !important ;
 height: 600px;
+background-position: center center;
+
+	
 }
 
 .xinde{
@@ -75,6 +78,7 @@ display:block;
   text-decoration: none;
 font-family: 'Jockey One', sans-serif;
 }
+
 .nav-right ul li:nth-child(2) a {
   padding: 11px 90px;
 }
@@ -167,13 +171,9 @@ padding:80px 0;
 	color: #fff;
 	
 }
-.mu div{
-	width: 40%;
-	height: auto;
-	
-}
+
 .middle-z{
-	width: 30%;
+	width: 100%;
 	display: block;
 	height: auto;
 	margin: 20px auto 0;
@@ -183,6 +183,37 @@ padding:80px 0;
 	display: block;
 	margin: 0 auto;
 }
+
+	
+
+@keyframes bianse{
+	0%{
+		color: red;
+		font-size: 20px;
+	}
+	20%{
+		color: blue;
+		font-size: 21px;
+	}
+	40%{
+		color: yellow;
+		font-size: 22px;
+	}
+	60%{
+		color: green;
+		font-size: 23px;
+	}
+	80%{
+		color: purple;
+		font-size: 24px;
+	}
+	100%{
+		color: #000;
+		font-size: 25px;
+	}
+}
+
+
 
 .mu i{
 	display: block;
@@ -237,15 +268,19 @@ div#portfolio {
 .da-thumbs li a div {
   position: absolute;
   background:#ced7df;
+  opacity: .7;
   width: 100%;
   height: 100%;
+  text-align: center;
+
 }
 .da-thumbs li a div  h5 {
-  font-family: 'Jockey One', sans-serif;
-  color: #323b43;
+  font-family: "微软雅黑";
+  color: #000;
   font-size: 24px;
   margin: 4.2em 0 0 0;
   text-align: center;
+  opacity: 1;
 }
 /*--//gallery--*/
 .gallery h3{
@@ -357,6 +392,7 @@ width:57%;
 }
 .md p{
   font-size: 20px!important;
+  text-align: center!important;
 }
 .about {
   background:#76b852;
@@ -370,7 +406,8 @@ width:57%;
 .wenzi{
 	font-family: "微软雅黑"!important;
 	color: #fff!important;
-	text-align: left!important;
+	
+	text-align: center!important;
 }
 .about-info h3 {
   font-family: 'Jockey One', sans-serif;
@@ -406,14 +443,53 @@ width:57%;
 .about-info b{
 	font-size: 20px;
 }
-.banner-image  .ingq{
+ .ingq{
 	position: absolute;
 	width: auto;
 	height: auto;
-	left: 20%;
+	top: 15%;
+	left: 5%;
+	float: left;
+	
 
 
 }
+.rightq{
+	float: right;
+	color: #fff;
+	font-family: "微软雅黑"!important;
+	font-size: 30px;
+	top: 30%;
+	right: 3%;
+	position: absolute;
+	max-width: 30%;
+}
+.rightq p:nth-of-type(1){
+	opacity: 1;
+	animation: pz 2s  alternate  infinite ;
+	
+}
+.rightq p:nth-of-type(2){
+	opacity: 1;
+	animation: pz 2s alternate  2s infinite ;
+	
+}
+.rightq p:nth-of-type(3){
+	opacity: 1;
+	animation: pz 2s alternate  infinite ;
+	
+}
+@keyframes pz{
+	0%{
+		opacity: 0;
+		
+	}
+	100%{
+		opacity: 1;
+		transform:translateX(20px);
+	}
+}
+
 .jingyan p{
 	display: block;
 	width: 120px;
@@ -423,10 +499,10 @@ width:57%;
 	font-family: "微软雅黑";
 	font-size:30px;
 }
-.banner-image .ingq img{
+.ingq img{
 	border-radius: 50%;
-	width: 30%;
-	height:30%;
+	width: 20%;
+	height:100%;
 }
 .wen{
   position: absolute;
@@ -794,7 +870,10 @@ color:#76b852;
 /*-- responsive media queries --*/
 @media (max-width: 1024px){
 	.banner{
-		height: 500px;
+		height: 550px;
+	}
+	.rightq{
+      font-size: 26px;
 	}
 	.nav-left a {
 	  font-size: 8em;
@@ -880,7 +959,10 @@ color:#76b852;
 }
 @media (max-width: 800px){
 	.banner{
-		height: 400px;
+		height: 500px;
+	}
+	.rightq{
+      font-size: 24px;
 	}
 	.navigation {
 	  float: left;
@@ -1026,8 +1108,11 @@ color:#76b852;
 	}
 }
 @media (max-width: 768px){
-	.banner{
-		height: 350px;
+     .banner{
+		height: 450px;
+	}
+	.rightq{
+      font-size: 22px;
 	}
 	.navigation {
 	  float: left;
@@ -1174,7 +1259,10 @@ color:#76b852;
 }
 @media (max-width: 640px){
 	.banner{
-		height: 290px;
+		height: 400px;
+	}
+	.rightq{
+      font-size: 20px;
 	}
 	.nav-left a {
 	  font-size: 5.5em;
@@ -1273,8 +1361,11 @@ color:#76b852;
 	}
 }
 @media (max-width: 480px){
-	.banner{
-		height: 175px;
+     .banner{
+     	height: 350px;
+     }
+     .rightq{
+      font-size: 16px;
 	}
 	.about-info h3, .skill-info h2, .gallery h3, .ser-head h3, .news h3, .get-info h3 {
 	  font-size: 26px;
@@ -1354,8 +1445,11 @@ color:#76b852;
 	
 }
 @media (max-width: 320px){
-	.banner{
-		height: 145px;
+ .banner{
+     	height: 300px;
+     }
+     .rightq{
+      font-size: 13px;
 	}
 .navigation {
 padding:0;
