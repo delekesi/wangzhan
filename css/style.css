@@ -390,6 +390,8 @@ width:57%;
 .about-grids {
   margin-top: 60px;
 }
+
+
 .md p{
   font-size: 20px!important;
   text-align: center!important;
@@ -524,6 +526,21 @@ width:57%;
   font-size: 14px;
   line-height: 1.8em;
   padding: 0.5em 0 0 0;
+
+}
+.about-grid p a{
+	display: block;
+	width: 20%;
+	height: 32px;
+	background: #ccc;
+	border-radius: 5px;
+	text-decoration: none;
+	color: green;
+	text-align: center;
+	line-height: 32px;
+}
+.about-grid p a:hover{
+	color: blue
 }
 /*--/about--*/
 /*--services--*/
